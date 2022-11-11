@@ -1,0 +1,1292 @@
+{
+  "id": "76b248a5-4e4c-47a0-a96d-13b38d3aa59f",
+  "version": "2.0",
+  "name": "IMC",
+  "url": "http://127.0.0.1:5500",
+  "tests": [{
+    "id": "535f2518-9577-4b9a-a4e4-3feb6e7d755f",
+    "name": "Teste - Feminino  Peso Ideal",
+    "commands": [{
+      "id": "fdf2e9df-e218-4115-965b-41d13e11e2f8",
+      "comment": "",
+      "command": "open",
+      "target": "/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97a052ae-3888-4fa3-8d4f-359fb5c711f1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8511ae8d-976f-4bdb-ae30-ed0aac6113a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=f",
+      "targets": [
+        ["id=f", "id"],
+        ["name=feminino", "name"],
+        ["css=#f", "css:finder"],
+        ["xpath=//input[@id='f']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d588cb2c-7e78-49f8-b99c-3c41112152d0",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c81d9b3c-47aa-4a97-8b3f-5c61ea20424b",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "59.2"
+    }, {
+      "id": "5fbfb206-c5ff-4135-8ff4-756987a1390e",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad26efb-e897-476e-97b6-b13107e76886",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.60"
+    }, {
+      "id": "7e1bc0ca-2ac5-4d2f-8939-d8323b386628",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f372bd3d-8ee5-41b1-8d61-b69ca571ae06",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Peso Ideal! Seu IMC é igual a 23.12",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9c726927-72fa-46c2-9c89-f1858519b117",
+    "name": "Teste - Feminino Abaixo do Peso",
+    "commands": [{
+      "id": "5e728222-45cf-4f71-87b2-19862e495f09",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8774002-4a2d-41d9-8355-b65fa363b4dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67bfcfc6-3cac-403b-b6a2-4e70608a409f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5627bff8-1113-4f37-a1be-1d92870e0aba",
+      "comment": "",
+      "command": "click",
+      "target": "id=f",
+      "targets": [
+        ["id=f", "id"],
+        ["name=feminino", "name"],
+        ["css=#f", "css:finder"],
+        ["xpath=//input[@id='f']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3106c3e8-2973-42a0-b466-02fd5f9aefb2",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e33029ae-7959-4fd7-9e54-2456709ddcb4",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "45.6"
+    }, {
+      "id": "f1895651-b7a7-4c41-9ac4-079052af16ff",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71d824a3-28ff-4445-87b8-b18399e05052",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.78"
+    }, {
+      "id": "d69a2778-3b77-4221-8ba4-d8b7890c6ad7",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eff464ef-aed1-40bf-a76e-502f484b502e",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Você esta abaixo do peso! Seu IMC é igual a 14.39",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "09d5ce25-f1e8-436f-859d-f7f3c378e1a0",
+    "name": "Teste - Feminino Peso Ideal",
+    "commands": [{
+      "id": "e426ba1d-bba7-46f4-8753-0b25ac64aa3e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "586f8ee9-5568-4686-a173-ddacbcc412d5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ad400c4-caab-417e-975c-f481f60495de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8bf5eee-a458-4687-88e2-a730c62bb97f",
+      "comment": "",
+      "command": "click",
+      "target": "id=f",
+      "targets": [
+        ["id=f", "id"],
+        ["name=feminino", "name"],
+        ["css=#f", "css:finder"],
+        ["xpath=//input[@id='f']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35409158-e3f8-4307-adf7-52d91e48dbf8",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "585b9771-3652-456d-b5e3-c8554ebdcf29",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "57.9"
+    }, {
+      "id": "8a968957-a8d2-4041-a4bf-03d59b640e40",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a05b094-c974-4cfb-8152-37270fd28d85",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.55"
+    }, {
+      "id": "58362edc-8c5e-4a59-a3d1-ff2b4c76afd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7a0e6ff-a71e-4b92-a4b0-e9fa8cf848fb",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Peso Ideal! Seu IMC é igual a 24.10",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "78f490c8-0620-4436-ae9e-16014fb369e5",
+    "name": "Teste - Feminino Obesidade Moderada",
+    "commands": [{
+      "id": "e5524796-57e0-4f9e-a1ca-2124ebe17944",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "415d02bf-2f25-41a7-b308-884ab60e33c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4950df4b-1bb3-4f14-990f-2a481d9720b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69665a8d-54c5-4349-ae08-e9397e5fa64c",
+      "comment": "",
+      "command": "click",
+      "target": "id=f",
+      "targets": [
+        ["id=f", "id"],
+        ["name=feminino", "name"],
+        ["css=#f", "css:finder"],
+        ["xpath=//input[@id='f']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cfa0b97-4cea-40cc-b1bb-e41444c94fba",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52546a62-08ce-46f6-9902-88b949066f0e",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "78"
+    }, {
+      "id": "a8d94ddc-7953-4843-8052-75597d301357",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe0185f-2166-4fcf-94f0-6f4b0682d431",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.68"
+    }, {
+      "id": "33d121dc-2735-46a8-9a37-3cb7e38a5708",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12786895-c5fa-4177-9451-54dffe9f169a",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Obesidade Moderada! Seu IMC é igual a 27.64",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a9016198-2ed9-4748-b9d2-3bc2535f2035",
+    "name": "Teste - Feminino Sobrepeso",
+    "commands": [{
+      "id": "287a5b20-0864-4324-8a67-86b1c6e0bd9a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "915c83b4-382d-4a88-9bb6-a6b483924b4f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08bfc224-a8f5-481c-9859-946a3a6a8523",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce159391-1525-43d1-9297-c123324ff146",
+      "comment": "",
+      "command": "click",
+      "target": "id=f",
+      "targets": [
+        ["id=f", "id"],
+        ["name=feminino", "name"],
+        ["css=#f", "css:finder"],
+        ["xpath=//input[@id='f']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acf87a68-c586-4ef0-b333-34ff0fe463f4",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d1b31c5-5edd-43ba-9b6a-aab6b7a90df0",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "67.7"
+    }, {
+      "id": "1e8d5ebb-3390-4acd-8c4a-7d4df65288ee",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb0bf2af-9092-4651-ac70-0f3c7bd64285",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.60"
+    }, {
+      "id": "32ae2964-a65c-4807-8f93-853a7eda6d0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b20510e-2e74-419a-87ce-528a6266241d",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Sobrepeso! Seu IMC é igual a 26.45",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9e822ac6-393d-4e46-a092-2ad3684e8715",
+    "name": "Teste - Feminino Obesidade",
+    "commands": [{
+      "id": "e654821d-163e-4759-9e41-9c106fe2cb54",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d301fc66-df1c-4aa7-8aaf-1d6628a3c19e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af6bf37a-028d-425e-b402-27e0a33e3900",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c6c27c5-a1aa-4dd7-9393-b2b4d915f585",
+      "comment": "",
+      "command": "click",
+      "target": "id=f",
+      "targets": [
+        ["id=f", "id"],
+        ["name=feminino", "name"],
+        ["css=#f", "css:finder"],
+        ["xpath=//input[@id='f']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e5a6d9f-ecf4-4110-bd26-dba45ac70f23",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bad8934-490b-44e5-803d-1879e9601bf9",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "94.3"
+    }, {
+      "id": "79df0f0d-abca-4ace-9491-8ca3402a7377",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02748f10-a1c7-4b8b-831f-99ad9d56dcc7",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.65"
+    }, {
+      "id": "f8e21b8b-2911-4e32-85b7-bd7cf282d4b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f0cdbb5-f759-4805-b4bc-0acd54d531d7",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Gordo!  Seu IMC é igual a 34.64",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b77d4bf1-5817-4c84-a75f-0caeec94fc88",
+    "name": "Teste - Masculino Peso Ideal",
+    "commands": [{
+      "id": "67bec699-c2ee-450e-9f2a-9358bdda7807",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf0dc534-ccf1-46fa-95f9-5b98796c1c91",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "223fdcc2-830a-4215-b88b-114dc254f504",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d80c75b-d51d-41ca-ba4a-2e813f23980b",
+      "comment": "",
+      "command": "click",
+      "target": "id=m",
+      "targets": [
+        ["id=m", "id"],
+        ["name=masculino", "name"],
+        ["css=#m", "css:finder"],
+        ["xpath=//input[@id='m']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4448433b-8ed4-4bb8-9786-c525a395e6a7",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfdf7298-606c-48f9-bbf0-b8cc2d78c98b",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "80.7"
+    }, {
+      "id": "0c3cb383-5dc7-4695-9031-1ddb0dc01619",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33f0bde9-e1a5-4abf-9403-87ad279edf2a",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.86"
+    }, {
+      "id": "fe2e6810-cbc9-4c28-9848-7b3ca98ad39d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8259f3a-b8ca-4c46-82f5-e89c7e881d63",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Peso Ideal! Seu IMC é igual a 23.33",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bc67cac5-74df-40bb-9367-800a2da12d35",
+    "name": "Teste - Masculino Abaixo do Peso",
+    "commands": [{
+      "id": "c77204b0-5236-4bc6-841e-f2da2df42021",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfe8601d-00e5-44e5-8600-57bc8028cadc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e82a46b-1867-41d1-82d3-279f144adccb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adc51101-2b12-485c-a9cb-d55aefe9d2c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=m",
+      "targets": [
+        ["id=m", "id"],
+        ["name=masculino", "name"],
+        ["css=#m", "css:finder"],
+        ["xpath=//input[@id='m']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42c8d849-1385-4c8c-8337-541e24ec5a76",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a81f3dba-5fa0-41c6-9d02-c11c2a7b1b0b",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "55.8"
+    }, {
+      "id": "8b320346-18b1-4761-bb78-6e7517a4c912",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3923d4e4-b92b-46f0-bf09-58a277c2714b",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.79"
+    }, {
+      "id": "3ea3e086-13ea-4c68-946d-e67081fb670d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1ee588d-7135-4cb2-ad4b-6da55cd3e989",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Você esta abaixo do peso! Seu IMC é igual a 17.42",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "55f2fbba-3b06-48d4-a1b2-38c332a8a609",
+    "name": "Teste - Masculino Sobrepeso",
+    "commands": [{
+      "id": "74693bb9-8ad0-4fbf-a466-0c5c4be467c1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbe3c54c-be30-4815-8071-318273693ffa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81d5b9d3-5adc-49b3-b7f6-e53aaaa9f7d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc20910e-87e0-4db4-aa81-8b4426f9048a",
+      "comment": "",
+      "command": "click",
+      "target": "id=m",
+      "targets": [
+        ["id=m", "id"],
+        ["name=masculino", "name"],
+        ["css=#m", "css:finder"],
+        ["xpath=//input[@id='m']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a79402e-0498-4dad-8c45-03ed45839cbc",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f478a729-19bb-49f2-8e5a-1aebe0238963",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "78.5"
+    }, {
+      "id": "e151a996-9ad9-4161-8d23-e6db5da8d374",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e68de46-f891-445a-9da6-6b9140f683e7",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.74"
+    }, {
+      "id": "8b8b70cc-a294-44ce-9ebf-292df3fadf7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "530f31fc-625a-4047-9d5c-992e6db18d02",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Sobrepeso! Seu IMC é igual a 25.93",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bf088b4c-c362-496a-b2b4-aa839af3afec",
+    "name": "Teste - Masculino Obesidade Moderada",
+    "commands": [{
+      "id": "ae650d52-0b66-4e4a-b2d3-a1cba9ae7416",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92c9b9c4-c59a-4d00-b659-9cd71532f66a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4ea0c51-5fc9-4594-93d8-ea117a613ac3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54e15da6-2428-43e7-bf99-d79b2212dc1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=m",
+      "targets": [
+        ["id=m", "id"],
+        ["name=masculino", "name"],
+        ["css=#m", "css:finder"],
+        ["xpath=//input[@id='m']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6c6bec5-5129-45a0-bee6-47d95ef58396",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fab73dd-67be-4560-8b87-1c0809da1536",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "95.4"
+    }, {
+      "id": "3091d3fd-5391-443f-a5c2-7bc430359033",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7863e928-187b-4380-ad69-c47ec32e0fce",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.81"
+    }, {
+      "id": "df754d70-86b2-4de5-83a7-66cd7b92a71d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbd45463-5852-4555-bb3f-23b7071a6e30",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Obesidade Moderada! Seu IMC é igual a 29.12",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "65b6a04e-b981-4f46-b3af-7cc5ab840f44",
+    "name": "Teste - Masculino Obesidade",
+    "commands": [{
+      "id": "353f97b6-c167-423a-a746-59e272e387d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "218fd7c4-d071-46a6-a0e1-1256b794a56f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd5cf340-999f-4e01-a271-68c7f612eba6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-html > .name",
+      "targets": [
+        ["css=.icon-html > .name", "css:finder"],
+        ["xpath=//ul[@id='files']/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'home.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73cd4cf5-34dd-4ba2-9f98-33c174b52bfb",
+      "comment": "",
+      "command": "click",
+      "target": "id=m",
+      "targets": [
+        ["id=m", "id"],
+        ["name=masculino", "name"],
+        ["css=#m", "css:finder"],
+        ["xpath=//input[@id='m']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4b825d8-017f-4250-a5a5-4a198b4e8cc9",
+      "comment": "",
+      "command": "click",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e377ed00-1798-46eb-9d1a-d2e936c69e0a",
+      "comment": "",
+      "command": "type",
+      "target": "name=peso",
+      "targets": [
+        ["name=peso", "name"],
+        ["css=.row-two > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='peso']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "106.7"
+    }, {
+      "id": "f235889d-bd82-4fe5-bc9a-388ecef1bce9",
+      "comment": "",
+      "command": "click",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "424f6458-1d65-43c3-a0d2-bfa40c4b1956",
+      "comment": "",
+      "command": "type",
+      "target": "name=altura",
+      "targets": [
+        ["name=altura", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='altura']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.72"
+    }, {
+      "id": "955907e2-f0ec-4f6f-bc0a-b930b503d50f",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcular')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be101b3f-a7f5-417e-8422-dd22acdbaaa1",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Gordo!  Seu IMC é igual a 36.07",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a1744a8a-4af7-4a25-ae05-d6d7ee07efa5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["535f2518-9577-4b9a-a4e4-3feb6e7d755f"]
+  }],
+  "urls": ["http://127.0.0.1:5500/"],
+  "plugins": []
+}
